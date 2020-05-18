@@ -1,0 +1,24 @@
+.c-menu{
+  @include fontInformation($size:28px, $weight:bold,$lineHeight:1, $color:rgba(255,255,255,0.8))
+  @include txtShadow(3px, 3px, 5px, $r:255, $g:255, $b:255, $a:0.3)
+  cursor: pointer;
+}
+.c-menu--slide{
+  @include fontInformation($size:36px, $weight:bold,$lineHeight:1, $color:rgba(255,255,255,0.8))
+  @include txtShadow(3px, 3px, 5px, $r:255, $g:255, $b:255, $a:0.3)
+  cursor: pointer;
+}
+.c-menu:hover{
+  @include fontInformation($size:30px, $weight:bold,$lineHeight:1, $color:rgba(4,4,62,0.4))
+  @include txtShadow(3px, 3px, 5px, $r:255, $g:255, $b:255, $a:0.8)
+  transition:all 400ms;
+}
+.c-menu--slide:hover{
+  @include fontInformation($size:38px, $weight:bold,$lineHeight:1, $color:rgba(4,4,62,0.4))
+  @include txtShadow(3px, 3px, 5px, $r:255, $g:255, $b:255, $a:0.8)
+  transition:all 400ms;
+}
+.c-menu.js-colorNaivy{
+  @include fontInformation($size:30px, $weight:bold,$lineHeight:1, $color:rgba(4,4,62,0.4))
+  transition:all 400ms;
+}

@@ -1,0 +1,7 @@
+.l-section--services, .l-section--contact{
+  background-color:$bgNaivy;
+}
+.l-section--top{
+  @include bgImage(bg)
+  @include size(100vw, 55.6vw)
+}

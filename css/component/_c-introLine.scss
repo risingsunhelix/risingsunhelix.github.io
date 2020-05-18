@@ -1,0 +1,4 @@
+.c-introLine{
+  @include fontInformation($size:16px)
+  @include txtShadow
+}

@@ -1,0 +1,16 @@
+.c-mainTitle{
+  @include fontInformation($size:80px, $weight:bold,$lineHeight:1, $color:rgba(255,255,255,0.8))
+  @include txtShadow(3px, 3px, 5px, $r:255, $g:255, $b:255, $a:0.3)
+}
+
+@media (max-width:$xl){
+  .c-mainTitle{
+    font-size:calc((100vw - #{$xs})/(#{$xlOnlyValue} - #{$xsOnlyValue})*58 + 22px);
+  }
+}
+
+@media (max-width:$xs){
+  .c-mainTitle{
+    font-size: 22px;
+  }
+}

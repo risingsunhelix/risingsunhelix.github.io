@@ -1,0 +1,36 @@
+.c-navBtn{
+  background-color:rgba(255,255,255,0.8);
+  @include size(30px, 1px)
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
+  display: inline-block;
+}
+.c-navBtn:nth-child(1){
+  top:10px;
+}
+.c-navBtn:nth-child(2){
+  top:20px;
+}
+.c-navBtn:nth-child(3){
+  top:30px;
+}
+
+.c-navBtn.js-open:nth-child(1){
+  transform: rotate(45deg);
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
+  top:20px;
+}
+.c-navBtn.js-open:nth-child(2){
+  display: none;
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
+}
+.c-navBtn.js-open:nth-child(3){
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
+  transform: rotate(-45deg);
+  top:20px;
+}

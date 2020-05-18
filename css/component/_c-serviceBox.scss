@@ -1,0 +1,51 @@
+.c-serviceBox{
+  width:calc(26.57/100*#{$xl});
+  height:420px;
+  @include boxShadow
+  z-index: 5;
+}
+.c-serviceBox__h{
+  @include fontInformation($size:20px)
+  @include txtShadow
+}
+.c-serviceBox__p{
+  @include fontInformation($size:16px)
+  @include txtShadow
+}
+.c-serviceBox__img{
+  @include size($w:70px, $h:70px)
+}
+
+@media (max-width:$xl){
+.c-serviceBox{
+  width :27vw;
+  height:420px;
+  @include boxShadow
+}
+}
+@media (max-width:$lg){
+.c-serviceBox{
+  width:90vw;
+  height: 100%;
+}
+.c-serviceBox__h{
+  @include fontInformation($size:20px)
+}
+.c-serviceBox__p{
+  @include fontInformation($size:16px)
+  width:70%;
+}
+.c-serviceBox__img{
+  @include size($w:70px, $h:70px)
+}
+}
+@media (max-width:$md){
+  .c-serviceBox__img{
+    @include size($w:50px, $h:50px)
+  }
+  .c-serviceBox__p{
+    @include fontInformation($size:14px)
+  }
+  .c-serviceBox{
+  }
+}

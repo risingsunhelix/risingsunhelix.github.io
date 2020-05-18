@@ -1,0 +1,17 @@
+.c-heading{
+  @include fontInformation(didot, 36px, bold, 0.1em, 1)
+  @include txtShadow
+  position: relative;
+}
+.c-heading--about::after{
+  @include subHeadingInformation("Isobe.について")
+}
+.c-heading--services::after{
+  @include subHeadingInformation("サービス内容")
+}
+.c-heading--works::after{
+  @include subHeadingInformation("制作実績")
+}
+.c-heading--contact::after{
+  @include subHeadingInformation("お問い合わせ")
+}
