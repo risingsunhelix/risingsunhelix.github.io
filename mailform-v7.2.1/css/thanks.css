@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+
+
+div#thanks {
+	width: 960px;
+	margin: 50px auto;
+	padding: 30px 0;
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	border-radius: 7px;
+	box-shadow: 0 0 7px rgba( 0, 0, 0, 0.2 );
+	font-size: 95%;
+	line-height: 1.8;
+}
+
+div#thanks h1,
+div#thanks h2 {
+		font-family: "didot";
+	  line-height: 1;
+	  color:rgba(0,0,0,0.8);
+	  content:"#{$subHeading}";
+		text-shadow: rgba(0,0,0,0.2) 3px 3px 5px;
+		width: 90%;
+		margin: 0 auto;
+		font-size: 32px;
+		font-weight: bold;
+		position: relative;
+		margin-bottom: 2em;
+}
+div#thanks h1::after{
+		font-family: "didot";
+	  font-style:italic;
+	  line-height: 1;
+	  color:rgba(4,4,62,0.8);
+	  content:"送信完了";
+		text-shadow: rgba(0,0,0,0.2) 3px 3px 5px;
+		font-size: 12px;
+		font-weight: normal;
+		position: absolute;
+	  top:32px;
+	  left: 32px;
+}
+
+div#thanks h2 {
+	margin-top: 3em;
+}
+
+.message {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 2em;
+	font-family: "didot";
+	line-height: 1;
+	color:rgba(0,0,0,0.8);
+	content:"#{$subHeading}";
+	text-shadow: rgba(0,0,0,0.2) 3px 3px 5px;
+	font-size: 16px;
+}
+
+div#thanks dl {
+	width: 90%;
+	margin: 0 auto 3em;
+}
+
+div#thanks dl dt {
+	margin-top: 2em;
+}
+.btnWrapper{
+	text-align: center;
+		margin-top:50px;
+}
+.btn{
+	font-size: 16px;
+	line-height: 40px;
+	font-style: normal;
+	display: inline-block;
+	background-color:rgba(4,4,62,0.6);
+	color:rgba(255,255,255,1);
+	box-shadow: 0 0 7px rgba( 0, 0, 0, 0.2 );
+	width:130px;
+	height: 40px;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	text-align: center;
+	border-radius: 5px;
+	margin: 0 auto;
+
+}
+
+
+
+
+
+
+
+
+/* -- responsive ------------------------------------------- */
+
+/* 1000pixel start */
+@media screen and ( max-width: 1000px ) {
+
+div#thanks {
+	width: 95%;
+	font-size: 100%;
+}
+
+}
+/* 1000pixel end */
